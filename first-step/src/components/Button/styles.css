@@ -1,0 +1,12 @@
+.button {
+  width: 100%;
+  background: black;
+  color: white;
+  border : none;
+  padding : 15px 25px;
+}
+.button :disabled {
+  min-height:  100px;
+  background: #888;
+  cursor: not-allowed;
+}
