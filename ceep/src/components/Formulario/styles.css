@@ -1,0 +1,14 @@
+.textInput {
+  padding: 15xp 10px;
+  display: flex;
+  width: 50%;
+  margin-top: 10px;
+}
+.buttonNota {
+  background-color: rebeccapurple ;
+  color : white;
+  justify-content: center;
+}
+.form-cadastro {
+  text-align: center;
+}
