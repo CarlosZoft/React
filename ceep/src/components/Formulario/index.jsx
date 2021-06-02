@@ -21,7 +21,8 @@ export default class Formulario extends Component {
   _createNota = e => {
     e.preventDefault();
     e.stopPropagation();
-    this.props.criarNota(this.titulo, this.text)
+    //if (this.titulo.lenght && this.titulo.length)
+    this.props.getNota(this.titulo, this.body);
   }
 
   render() {

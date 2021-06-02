@@ -2,8 +2,16 @@ import React, { Component } from 'react';
 import ListaNotas from '../ListaNotas';
 
 export default class Nota extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      notas: []
+    }
+    this.setState({ notas: [...this.state.notas, this.props.newNota] })
+  }
+
   render() {
-    const notas = this.props.notas;
+    const notas = this.state.notas;
     return (
       <ul>
         {notas.map((categoria, index) => {
